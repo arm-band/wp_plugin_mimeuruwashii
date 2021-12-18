@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: MIMEuruwashii
-Description: PHP の MIMEタイプ 判定で特定の .xlsファイル が弾かれる現象への対策
-Version: 0.0.3
+Description: PHP の MIMEタイプ 判定で .zipファイル や .mdファイル, 特定の .xlsファイル が弾かれる現象への対策
+Version: 0.0.4
 Author: アルム＝バンド
 */
 
 /**
- * MIMEuruwashii : PHP の MIMEタイプ 判定で特定の .xlsファイル が弾かれる現象への対策
+ * MIMEuruwashii : PHP の MIMEタイプ 判定で .zipファイル や .mdファイル, 特定の .xlsファイル が弾かれる現象への対策
  */
 class MIMEuruwashii
 {
@@ -39,6 +39,33 @@ class MIMEuruwashii
             ],
             [
                 'xla|xls|xlt|xlw' => 'application/vnd.ms-excel'
+            ],
+            [
+                'md|markdown' => 'text/plain'
+            ],
+            [
+                'zip|xzip' => 'application/zip'
+            ],
+            [
+                'zip|xzip' => 'application/z-zip'
+            ],
+            [
+                'zip|xzip' => 'application/zip-compressed'
+            ],
+            [
+                'zip|xzip' => 'application/x-zip-compressed'
+            ],
+            [
+                'zip|xzip' => 'application/compressed'
+            ],
+            [
+                'zip|xzip' => 'application/x-compressed'
+            ],
+            [
+                'zip|xzip' => 'application/octet'
+            ],
+            [
+                'zip|xzip' => 'application/octet-stream'
             ],
         ];
     }
